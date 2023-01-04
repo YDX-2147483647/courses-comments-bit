@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "来源列表",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "title": "来源",
+        "required": [
+            "id",
+            "name",
+            "url",
+            "date"
+        ],
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "必须不重复。"
+            },
+            "name": {
+                "type": "string",
+                "title": "来源名称",
+                "examples": [
+                    "阳光服务队、极速之星《通识选课攻略》"
+                ]
+            },
+            "url": {
+                "type": "string",
+                "format": "uri"
+            },
+            "date": {
+                "type": "string",
+                "title": "发布日期",
+                "format": "date"
+            }
+        }
+    }
+}

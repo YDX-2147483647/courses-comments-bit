@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "评论列表",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "required": [
+            "course",
+            "teacher",
+            "rate",
+            "comment",
+            "source"
+        ],
+        "properties": {
+            "course": {
+                "type": "string",
+                "title": "课程"
+            },
+            "teacher": {
+                "type": "string",
+                "title": "教师"
+            },
+            "comment": {
+                "type": "string",
+                "title": "评论",
+                "description": "可能多行。"
+            },
+            "rate": {
+                "type": "number",
+                "title": "评分",
+                "description": "满分10分。",
+                "maximum": 10,
+                "minimum": 0
+            },
+            "source": {
+                "type":"string",
+                "title": "来源的 id"
+            }
+        }
+    }
+}

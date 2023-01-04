@@ -1,0 +1,8 @@
+{
+    "yaml.schemas": {
+        "schema/comments.schema.json": [
+            "comments/*.yaml",
+        ],
+        "schema/sources.schema.json": "sources.yaml",
+    },
+}
